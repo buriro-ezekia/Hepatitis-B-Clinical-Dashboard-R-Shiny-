@@ -73,7 +73,7 @@ shiny::runApp("shiny-app/")
   - Resource limits (memory/CPU) on the shinyapps.io plan
 - For reproducible deployments consider containerisation (Docker) or renv for package management.
 
-## Example Project Structure
+## Project Structure
 - /data/            # raw and processed (do not commit PHI)
 - /R/ or /scripts/  # data cleaning and analysis scripts
 - app.R             # main Shiny app (or ui.R + server.R)
