@@ -66,29 +66,12 @@ shiny::runApp("shiny-app/")
 - Thresholds used in visuals reflect commonly used clinical cutoffs—consult the code or data dictionary for exact values and modify to match local guidelines.
 - Correlation plots provide Pearson or Spearman coefficients depending on data distribution; consider stratified analyses for subgroups.
 
-## Data Privacy & Ethics
-- Ensure all patient data are de-identified before upload or use.
-- Follow local institutional review board (IRB) and data governance policies when sharing or deploying the dashboard.
-- For public deployments, avoid including any personally identifiable information (PII) or small-cell counts that could risk re-identification.
-
 ## Deployment & Environment
 - The app is deployed on shinyapps.io. Deployment considerations included:
   - Explicit package/version management
   - Environment variable handling for credentials
   - Resource limits (memory/CPU) on the shinyapps.io plan
 - For reproducible deployments consider containerisation (Docker) or renv for package management.
-
-## Development & Contributing
-Contributions and feedback welcome. Suggested next steps:
-- Add sample (de-identified) dataset or a synthetic data generator for reproducible demos
-- Include screenshots, a data dictionary (column descriptions), and example analyses
-- Add unit/QA tests for data cleaning pipelines
-- Provide a Dockerfile or GitHub Actions workflow for CI/CD and reproducible deployment
-
-To contribute:
-1. Fork the repo
-2. Create a feature branch
-3. Submit a pull request with a clear description
 
 ## Example Project Structure
 - /data/            # raw and processed (do not commit PHI)
