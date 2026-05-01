@@ -6,7 +6,7 @@ library(tidyr)
 library(lubridate)
 
 # ---------------- LOAD DATA ----------------
-data <- read.csv("DIAGNOSIS_RESULTS_CLEANED_ready.csv", stringsAsFactors = FALSE)
+data <- read.csv("data/DIAGNOSIS_RESULTS_CLEANED_ready.csv", stringsAsFactors = FALSE)
 
 # ---------------- DATA CLEANING ----------------
 data$REGN_DT <- as.POSIXct(data$REGN_DT, format = "%d-%b-%Y %H.%M.%S", tz = "UTC")
